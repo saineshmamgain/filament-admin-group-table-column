@@ -11,15 +11,17 @@ class GroupColumn extends Column
     public array $groupColumns;
     public string $columnSeparator = "<br>";
 
-    public function setGroupColumns(array $columns) : static
+    public function setGroupColumns(array $columns): static
     {
         $this->groupColumns = $columns;
+
         return $this;
     }
 
-    public function setColumnSeparator(string $separator) : static
+    public function setColumnSeparator(string $separator): static
     {
         $this->columnSeparator = $separator;
+
         return $this;
     }
 }
